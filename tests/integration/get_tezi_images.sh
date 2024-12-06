@@ -3,14 +3,15 @@
 # images to be downloaded
 # format is MACHINE:DISTRO:IMAGE
 IMAGES="\
-colibri-imx6:torizon-upstream:torizon-docker \
-colibri-imx6ull-emmc:torizon-upstream:torizon-docker \
-colibri-imx7-emmc:torizon-upstream:torizon-docker \
-colibri-imx8x:torizon:torizon-docker \
-apalis-imx6:torizon-upstream:torizon-docker \
-verdin-imx8mm:torizon:torizon-docker \
-verdin-imx8mp:torizon:torizon-docker \
-verdin-am62:torizon:torizon-docker \
+colibri-imx6:torizon-upstream:torizon-core-docker \
+colibri-imx6ull-emmc:torizon-upstream:torizon-core-docker \
+colibri-imx7-emmc:torizon-upstream:torizon-core-docker \
+colibri-imx8x:torizon:torizon-core-docker
+apalis-imx6:torizon-upstream:torizon-core-docker \
+apalis-imx8:torizon:torizon-core-docker \
+verdin-imx8mm:torizon:torizon-core-docker \
+verdin-imx8mp:torizon:torizon-core-docker \
+verdin-am62:torizon:torizon-core-docker \
 "
 
 # location to save images
@@ -19,14 +20,14 @@ TMPDIR="$OUTDIR/tmp"
 STAMP="$OUTDIR/.images_downloaded"
 
 # branch
-BRANCH="scarthgap-7.x.y"
+BRANCH="kirkstone-6.x.y"
 
 # CONFIGME: version
-TCVERSION="7.0.0"
+TCVERSION="6.8.0"
 
 # CONFIGME: build number
-BUILD_NUMBER="1"
-BUILD_DATE="20210315"
+BUILD_NUMBER="22"
+BUILD_DATE="20241012"
 
 # CONFIGME: uncomment for nightly images
 #BUILD_RELEASE="prerelease"

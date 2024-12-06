@@ -53,88 +53,88 @@ build-aval-docker:
     - (! grep "^not ok" workdir/reports/*)
 
 # AVAL_TEST_ALL can be defined as "true" on a Gitlab schedule to run tests on all devices
-aval-apalis-imx6q-scarthgap-release:
+aval-apalis-imx6q-kirkstone-release:
   extends: .aval-template
   variables:
     SOC_UDT: "apalis-imx6q"
     TARGET_BUILD_TYPE: "release"
-    DELEGATION_CONFIG: "./aval/delegation_config_scarthgap.toml"
+    DELEGATION_CONFIG: "./aval/delegation_config_kirkstone.toml"
     TCB_MACHINE: "apalis-imx6"
 
-aval-apalis-imx8qm-scarthgap-release:
+aval-apalis-imx8qm-kirkstone-release:
   extends: .aval-template
   rules:
     - if: '$AVAL_TEST_ALL =~ /^true$/i'
   variables:
     SOC_UDT: "apalis-imx8qm"
     TARGET_BUILD_TYPE: "release"
-    DELEGATION_CONFIG: "./aval/delegation_config_scarthgap.toml"
+    DELEGATION_CONFIG: "./aval/delegation_config_kirkstone.toml"
     TCB_MACHINE: "apalis-imx8"
 
-aval-colibri-imx6dl-scarthgap-release:
+aval-colibri-imx6dl-kirkstone-release:
   extends: .aval-template
   rules:
     - if: '$AVAL_TEST_ALL =~ /^true$/i'
   variables:
     SOC_UDT: "colibri-imx6dl"
     TARGET_BUILD_TYPE: "release"
-    DELEGATION_CONFIG: "./aval/delegation_config_scarthgap.toml"
+    DELEGATION_CONFIG: "./aval/delegation_config_kirkstone.toml"
     TCB_MACHINE: "colibri-imx6"
 
-aval-colibri-imx6ull-emmc-scarthgap-release:
+aval-colibri-imx6ull-emmc-kirkstone-release:
   extends: .aval-template
   rules:
     - if: '$AVAL_TEST_ALL =~ /^true$/i'
   variables:
     SOC_UDT: "colibri-imx6ull-emmc"
     TARGET_BUILD_TYPE: "release"
-    DELEGATION_CONFIG: "./aval/delegation_config_scarthgap.toml"
+    DELEGATION_CONFIG: "./aval/delegation_config_kirkstone.toml"
     TCB_MACHINE: "colibri-imx6ull-emmc"
 
-aval-colibri-imx7d-emmc-scarthgap-release:
+aval-colibri-imx7d-emmc-kirkstone-release:
   extends: .aval-template
   rules:
     - if: '$AVAL_TEST_ALL =~ /^true$/i'
   variables:
     SOC_UDT: "colibri-imx7d-emmc"
     TARGET_BUILD_TYPE: "release"
-    DELEGATION_CONFIG: "./aval/delegation_config_scarthgap.toml"
+    DELEGATION_CONFIG: "./aval/delegation_config_kirkstone.toml"
     TCB_MACHINE: "colibri-imx7-emmc"
 
-aval-colibri-imx8dx-scarthgap-release:
+aval-colibri-imx8dx-kirkstone-release:
   extends: .aval-template
   rules:
     - if: '$AVAL_TEST_ALL =~ /^true$/i'
   variables:
     SOC_UDT: "colibri-imx8dx"
     TARGET_BUILD_TYPE: "release"
-    DELEGATION_CONFIG: "./aval/delegation_config_scarthgap.toml"
+    DELEGATION_CONFIG: "./aval/delegation_config_kirkstone.toml"
     TCB_MACHINE: "colibri-imx8x"
 
-aval-verdin-am62dual-scarthgap-release:
+aval-verdin-am62dual-kirkstone-release:
   extends: .aval-template
   rules:
     - if: '$AVAL_TEST_ALL =~ /^true$/i'
   variables:
     SOC_UDT: "verdin-am62dual"
     TARGET_BUILD_TYPE: "release"
-    DELEGATION_CONFIG: "./aval/delegation_config_scarthgap.toml"
+    DELEGATION_CONFIG: "./aval/delegation_config_kirkstone.toml"
     TCB_MACHINE: "verdin-am62"
 
-aval-verdin-imx8mmq-scarthgap-release:
+aval-verdin-imx8mmq-kirkstone-release:
   extends: .aval-template
   rules:
     - if: '$AVAL_TEST_ALL =~ /^true$/i'
   variables:
     SOC_UDT: "verdin-imx8mmq"
     TARGET_BUILD_TYPE: "release"
-    DELEGATION_CONFIG: "./aval/delegation_config_scarthgap.toml"
+    DELEGATION_CONFIG: "./aval/delegation_config_kirkstone.toml"
     TCB_MACHINE: "verdin-imx8mm"
 
-aval-verdin-imx8mpq-scarthgap-release:
+aval-verdin-imx8mpq-kirkstone-release:
   extends: .aval-template
   variables:
     SOC_UDT: "verdin-imx8mpq"
     TARGET_BUILD_TYPE: "release"
-    DELEGATION_CONFIG: "./aval/delegation_config_scarthgap.toml"
+    DELEGATION_CONFIG: "./aval/delegation_config_kirkstone.toml"
     TCB_MACHINE: "verdin-imx8mp"
